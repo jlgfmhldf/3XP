@@ -5,6 +5,9 @@
     background-image url(../images/header-pattern.png)
     background-repeat repeat
     text-align left
+    position absolute
+    top 0
+    left 0
 
     &__logo
         sprite($logo)
@@ -45,6 +48,9 @@
         position relative
 
     &__lang
-        margin-left 10px
+        margin-right 10px
         position relative
         top 5px
+
+        &:last-of-type
+            margin-right 30px

@@ -1,0 +1,27 @@
+.title
+    color #0f3751
+    font-size 40px
+    font-weight 700
+    text-align center
+    padding 40px 0
+
+    &__text
+        position relative
+        display inline-block
+        background #ffffff
+        z-index 10
+
+        &:before
+        &:after
+            content ''
+            display inline-block
+            size 138px 2px
+            background-color #0f3751
+            top 20px
+            position absolute
+
+        &:before
+            left -164px
+
+        &:after
+            right -164px

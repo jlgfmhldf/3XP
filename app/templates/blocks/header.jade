@@ -2,13 +2,13 @@
     .wrapper.header__wrapper
         a.header__logo(href="/")
         nav.header__menu
-            a.header__menu-item.js-scroll-to(href='#about')
-                span(lang="cn") 关于我们
-            a.header__menu-item.js-scroll-to(href='#projects')
-                span(lang="cn") 游戏产品
-            a.header__menu-item.js-scroll-to(href='#team')
-                span(lang="cn") 团队
-            a.header__menu-item.js-scroll-to(href='#contacts')
-                span(lang="en") Contact us
-            .header__lang.lang.lang_type_russian.lang_state_active
-            .header__lang.lang.lang_type_china
+            a.header__menu-item.toggle-lang.js-scroll-to(href='#about' lang="cn") 关于我们
+            a.header__menu-item.toggle-lang.js-scroll-to(href='#about' lang="ru") О компании
+            a.header__menu-item.toggle-lang.js-scroll-to(href='#projects' lang="cn") 游戏产品
+            a.header__menu-item.toggle-lang.js-scroll-to(href='#projects' lang="ru") Проекты
+            a.header__menu-item.toggle-lang.js-scroll-to(href='#team' lang="cn") 团队
+            a.header__menu-item.toggle-lang.js-scroll-to(href='#team' lang="ru") Команда
+            a.header__menu-item.toggle-lang.js-scroll-to(href='#contacts' lang="en") Contact us
+            a.header__menu-item.toggle-lang.js-scroll-to(href='#contacts' lang="ru") Контакты
+            .header__lang.lang.lang_type_russian.js-lang-btn(data-lang='ru')
+            .header__lang.lang.lang_type_china.lang_state_active.js-lang-btn(data-lang='cn')

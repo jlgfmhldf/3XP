@@ -1,30 +1,36 @@
 .projects#projects
     .title
-        .title__text
-            span(lang="cn") 游戏产品
+        .title__text.toggle-lang(lang="cn") 游戏产品
+        .title__text.toggle-lang(lang="ru") Проекты
+
     .banner
         img.banner__image(src='assets/images/project-image.png')
-    p.text
-        span(lang="cn")
+    p.text.toggle-lang(lang="cn")
             | 我们一直在寻找新的游戏产品，因此我们会考虑任何合作建议。
             br
             br
             | 我们正准备两款游戏在App Store和谷歌店，社交网络vkontakte和odnoklassniki上线 。
+
+    p.text.toggle-lang(lang="ru")
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sem libero, vulputate sit amet augue non, auctor interdum arcu. Suspendisse ante arcu, finibus in nisi sit amet, lobortis cursus tellus. Integer vitae lorem lacus. Mauris ac fermentum purus, nec tristique dui. Nam id varius mi. Quisque enim enim, fermentum sed vehicula eu, tincidunt non dui. In eu neque in est elementum congue nec eget arcu.
+        br
+        br
+        | Etiam euismod ullamcorper libero ac vehicula. Fusce in augue id erat tincidunt posuere sed id purus. Donec efficitur nisl sapien, eu semper felis feugiat eget. Aliquam consectetur enim nunc, non convallis mauris tristique quis. Curabitur aliquet tellus mi, id luctus velit egestas non.
     .projects__banner-wrapper
         .banner.banner_size_small.projects__small-banner
             img.banner__image(src='assets/images/project-image-small-1.png')
-            span.banner__text
-                span(lang="cn") 浏览器游戏
+            span.banner__text.toggle-lang(lang="cn") 浏览器游戏
+            span.banner__text.toggle-lang(lang="ru") Браузерные игры
 
         .banner.banner_size_small.projects__small-banner
             img.banner__image(src='assets/images/project-image-small-2.png')
-            span.banner__text
-                span(lang="cn") 社交游戏
+            span.banner__text.toggle-lang(lang="cn") 社交游戏
+            span.banner__text.toggle-lang(lang="ru") Игры в социальных сетях
 
         .banner.banner_size_small.projects__small-banner
             img.banner__image(src='assets/images/project-image-small-3.png')
-            span.banner__text
-                span(lang="cn") 手机游戏
+            span.banner__text.toggle-lang(lang="cn") 手机游戏
+            span.banner__text.toggle-lang(lang="ru") Мобильные игры
 
 
     .hr

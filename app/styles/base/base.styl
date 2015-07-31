@@ -17,8 +17,19 @@ body
     padding-left 63px
     padding-right 63px
 
-span[lang='cn']
+.toggle-lang[lang='cn']
     font-family $JhengHei
 
-span[lang='en']
+.toggle-lang[lang='en']
+.toggle-lang[lang='ru']
     font-family $OpenSans
+
+html[lang='ru']
+    .toggle-lang[lang='cn']
+    .toggle-lang[lang='en']
+        display none
+
+html[lang='cn']
+    .toggle-lang[lang='ru']
+        display none
+

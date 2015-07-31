@@ -1,53 +1,54 @@
 .team#team
     .title
-        .title__text
-            span(lang="cn") 团队
+        .title__text.toggle-lang(lang="cn") 团队
+        .title__text.toggle-lang(lang="ru") Команда
 
     .team-item
         .team-item__image
             img.team-item__photo(src="assets/images/photo-1.png")
 
-        .team-item__name
-            span(lang="en") Olga
-        .team-item__profession
-            span(lang="cn") 创始人，发展经理
+        .team-item__name.toggle-lang(lang="en") Olga
+        .team-item__name.toggle-lang(lang="ru") Ольга
+        .team-item__profession.toggle-lang(lang="cn") 创始人，发展经理
+        .team-item__profession.toggle-lang(lang="ru") Founder, Development Manager
 
-        a(href=jv0).team-item__btn Send mail
+        a(href=jv0 lang="en").team-item__btn.toggle-lang Send mail
+        a(href=jv0 lang="ru").team-item__btn.toggle-lang Написать на почту
 
 
     .team-item
         .team-item__image
             img.team-item__photo(src="assets/images/photo-2.png")
 
-        .team-item__name
-            span(lang="en") Sergey
-        .team-item__profession
-            span(lang="en") Founder, VP Publishing & Operations
+        .team-item__name.toggle-lang(lang="en") Sergey
+        .team-item__name.toggle-lang(lang="ru") Сергей
+        .team-item__profession Founder, VP Publishing & Operations
 
-        a(href=jv0).team-item__btn Send mail
+        a(href=jv0 lang="en").team-item__btn.toggle-lang Send mail
+        a(href=jv0 lang="ru").team-item__btn.toggle-lang Написать на почту
 
 
     .team-item
         .team-item__image
             img.team-item__photo(src="assets/images/photo-3.png")
 
-        .team-item__name
-            span(lang="en") Kate
-        .team-item__profession
-            span(lang="en") Marketing Director
+        .team-item__name.toggle-lang(lang="en") Kate
+        .team-item__name.toggle-lang(lang="ru") Катя
+        .team-item__profession Marketing Director
 
-        a(href=jv0).team-item__btn Send mail
+        a(href=jv0 lang="en").team-item__btn.toggle-lang Send mail
+        a(href=jv0 lang="ru").team-item__btn.toggle-lang Написать на почту
 
 
     .team-item
         .team-item__image
             img.team-item__photo(src="assets/images/photo-4.png")
 
-        .team-item__name
-            span(lang="en") Vlad
-        .team-item__profession
-            span(lang="en") Chief Technology Officer
+        .team-item__name.toggle-lang(lang="en") Vlad
+        .team-item__name.toggle-lang(lang="ru") Влад
+        .team-item__profession Chief Technology Officer
 
-        a(href=jv0).team-item__btn Send mail
+        a(href=jv0 lang="en").team-item__btn.toggle-lang Send mail
+        a(href=jv0 lang="ru").team-item__btn.toggle-lang Написать на почту
 
     .hr

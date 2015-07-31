@@ -1,7 +1,7 @@
 .contacts#contacts
     .title
-        .title__text
-            span(lang="en") Contact us
+        .title__text.toggle-lang(lang="cn") Contact us
+        .title__text.toggle-lang(lang="ru") Контакты
 
     .contacts-item
         .contacts-item__icon.contacts-item__icon_type_mail
@@ -12,10 +12,13 @@
     .contacts-item
         .contacts-item__icon.contacts-item__icon_type_address
 
-        a.contacts-item__text
-            span(lang="en").contacts-item__text-content.
-                123308, Moscow,
-                Jukova street 16
+        a.contacts-item__text.toggle-lang(lang="cn").
+            123308, Moscow,
+            Jukova street 16
+
+        a.contacts-item__text.toggle-lang(lang="ru").
+            123308, Москва,
+            Улица Жукова, 16
 
 
     .contacts-item

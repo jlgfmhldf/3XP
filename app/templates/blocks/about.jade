@@ -1,13 +1,12 @@
 .about#about
     .title
-        .title__text
-            span(lang="cn") 关于我们
+        .title__text.toggle-lang(lang="cn") 关于我们
+        .title__text.toggle-lang(lang="ru") О компании
 
     .banner
         img.banner__image(src='assets/images/about-image.png')
 
-    p.text(lang="cn")
-        span(lang="cn")
+    p.text.toggle-lang(lang="cn")
             | 3XP公司建立于2013年。公司主要发行网页游戏和社交网络游戏。
             br
             br
@@ -21,5 +20,8 @@
             br
             br
             | 公司创造者都是游戏迷，从2008年加入了游戏行业作为SnailGame Rus（蜗牛俄罗斯子公司）的员工。我们总共推广了30多款游戏因此对俄罗斯市场拥有比其他人更深刻的了解。
+
+    p.text.toggle-lang(lang="ru").
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sem libero, vulputate sit amet augue non, auctor interdum arcu. Suspendisse ante arcu, finibus in nisi sit amet, lobortis cursus tellus. Integer vitae lorem lacus. Mauris ac fermentum purus, nec tristique dui. Nam id varius mi. Quisque enim enim, fermentum sed vehicula eu, tincidunt non dui. In eu neque in est elementum congue nec eget arcu.
 
     .hr

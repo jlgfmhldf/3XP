@@ -5,7 +5,7 @@ $(function () {
 	var
 		$scrollBtn = $('.js-scroll-to');
 
-	$scrollBtn.on('click', function () {
+	$scrollBtn.on('click', function (event) {
 		var scrollId = $(this).attr('href');
 
 		$.scrollTo(scrollId, 1000, {

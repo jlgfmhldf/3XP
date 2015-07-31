@@ -2,6 +2,19 @@ $(function () {
 
 	'use strict';
 
-	// Code here
+	var
+		$scrollBtn = $('.js-scroll-to');
+
+	$scrollBtn.on('click', function () {
+		var scrollId = $(this).attr('href');
+
+		$.scrollTo(scrollId, 1000, {
+			offset: {
+				top: -150
+			}
+		});
+
+		event.preventDefault()
+	});
 
 });

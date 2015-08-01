@@ -11,7 +11,7 @@ $(function () {
 
 		$.scrollTo(scrollId, 1000, {
 			offset: {
-				top: -150
+				top: -90
 			}
 		});
 

@@ -4,7 +4,8 @@ $(function () {
 
 	var
 		$scrollBtn = $('.js-scroll-to'),
-		$langBtn = $('.js-lang-btn');
+		$langBtn = $('.js-lang-btn'),
+		multilingualism = false;
 
 	$scrollBtn.on('click', function (event) {
 		var scrollId = $(this).attr('href');
@@ -18,16 +19,18 @@ $(function () {
 		event.preventDefault()
 	});
 
-	$langBtn.on('click', function () {
-		var
-			$this = $(this),
-			value = $this.attr('data-lang'),
-			activeClass = 'lang_state_active';
+	if (multilingualism) {
+		$langBtn.on('click', function () {
+			var
+				$this = $(this),
+				value = $this.attr('data-lang'),
+				activeClass = 'lang_state_active';
 
-		$('html').attr('lang', value);
+			$('html').attr('lang', value);
 
-		$langBtn.removeClass(activeClass);
-		$this.addClass(activeClass);
-	});
+			$langBtn.removeClass(activeClass);
+			$this.addClass(activeClass);
+		});
+	}
 
 });
